@@ -22,11 +22,11 @@ services:
       - node_modules:/home/node/app/node_modules
     networks:
       - app-network
-    command: ./wait-for.sh db:27017 -- /home/node/app/node_modules/.bin/nodemon app.js
+    command: ./wait-for.sh db_hernandez:27017 -- /home/node/app/node_modules/.bin/nodemon app.js
 
-  db:
+  db_hernandez: # Cambiado de "db" a "db_hernandez"
     image: mongo:4.1.8-xenial
-    container_name: db
+    container_name: db_hernandez # Cambiado de "db" a "db_hernandez"
     restart: unless-stopped
     env_file: .env
     environment:
