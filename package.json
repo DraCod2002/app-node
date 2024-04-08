@@ -1,0 +1,24 @@
+{
+  "name": "delivery-node",
+  "version": "1.0.0",
+  "description": "Ejemplo delivery node",
+  "author": "jfarfan",
+  "license": "MIT",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "nodejs",
+    "bootstrap",
+    "express"
+  ],
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.10",
+    "nodemon": "^1.18.10"
+  }
+}
